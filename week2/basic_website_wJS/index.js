@@ -1,10 +1,20 @@
 var navbar = document.createElement("nav")
 document.body.append(navbar)
+//document.body.style.border = "4px solid black"
 
-var navElement1 = document.createElement("a")
+/*var navElement1 = document.createElement("a")
 navElement1.textContent = "Home "
 var nav1 = document.querySelector('nav')
 nav1.append(navElement1)
+document.body.style.border = "1px solid black"*/
+
+var navElement1 = document.createElement("a")
+navElement1.textContent = "Home"
+var nav1 = document.querySelector('nav')
+
+
+
+
 
 var navElement2 = document.createElement("a")
 navElement2.textContent = "Contact "
