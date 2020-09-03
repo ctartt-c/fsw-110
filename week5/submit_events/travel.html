@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="travel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <h1>Travel Application</h1>
+        </nav>
+        
+        <h3 id="info-title">Fill in Information Below</h3>
+        <form name="travelForm">
+            <label for="">First Name: <input type="text" name="first-name" id="first-name" required placeholder="First Name"></label>
+            
+            <br><label for="">Last Name: <input type="text" name="last-name" id="last-name" required placeholder="Last Name"></label>
+            <br> 
+
+            <label for="">Age: <input min="0" max="100" type="number" name="age" id="age" required placeholder="Age"></label>
+            <br>
+
+            <h3>Gender</h3>
+            Male: <input type="radio" name="gender" value="Male">
+            Female: <input type="radio" name="gender" value="Female">
+            Other: <input type="radio" name="gender" value="Other">
+            <br>
+
+            <h3>Location</h3>
+            <select name="city" id="location">
+                <option value="Alabama">Alabama</option>
+                <option value="Atlanta">Atlanta</option>
+                <option value="Texas">Texas</option>
+            </select>
+
+            <h3>Dietary Restrictions</h3>
+            Vegetarian: <input type="checkbox" name="diet" value="vegetarian">
+            <br>
+            Kosher: <input type="checkbox" name="diet" value="kosher">
+            <br>
+            Lactose Free: <input type="checkbox" name="diet" value="lactose-free" id="lactose">
+            <br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="travel.js"></script>
+</body>
+</html>

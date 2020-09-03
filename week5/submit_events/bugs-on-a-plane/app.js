@@ -24,4 +24,4 @@ function formAlert() {
 }
 
 
-submit.addEventListener("click", formAlert);
+document.form.addEventListener("submit", formAlert);
